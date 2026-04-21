@@ -1,0 +1,47 @@
+{
+  "name": "bookshelf-ui",
+  "version": "0.1.0",
+  "description": "Reusable bookshelf carousel UI with Web Components and React wrapper",
+  "type": "module",
+  "private": true,
+  "license": "MIT",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./react": {
+      "types": "./dist/react.d.ts",
+      "import": "./dist/react.js",
+      "require": "./dist/react.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "devDependencies": {
+    "@testing-library/react": "^16.3.0",
+    "@types/react": "^19.2.2",
+    "@types/react-dom": "^19.2.2",
+    "jsdom": "^26.1.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.3",
+    "vitest": "^3.2.4"
+  }
+}
